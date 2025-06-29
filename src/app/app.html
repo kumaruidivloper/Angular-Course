@@ -1,50 +1,43 @@
 <div class="wrapper">
   <div class="container">
-  <h1>DblClick mouse event Counter Example</h1>
+  <h1>KeyPress Event Binding</h1>
   <div class="btn-container">
-    <h1 (dblclick)="incrDbl()">Increment - {{counterDbl}}</h1>
+    <input style="padding: 5px;" type="text" (keypress)="onKeyPress()"/>
   </div>
 </div>
 
 <div class="container">
-  <h1>Mouse Over event Counter Example</h1>
+  <h1>KeyDown Event Binding</h1>
   <div class="btn-container">
-    <h1 (mouseover)="incrMouseOver()">Increment - {{counterMouseOver}}</h1>
+    <input style="padding: 5px;" type="text" (keydown)="onKeyDown()"/>
   </div>
 </div>
 
 <div class="container">
-  <h1>Mouse Leave event Counter Example</h1>
+  <h1>KeyEnter Event Binding</h1>
   <div class="btn-container">
-    <h1 (mouseleave)="incrMouseLeave()">Increment - {{counterMouseLeave}}</h1>
+    <input style="padding: 5px;" type="text" (keydown.enter)="onKeyDownEnter()"/>
   </div>
 </div>
 
 <div class="container">
-  <h1>Mouse Down event Counter Example</h1>
+  <h1>KeyUp Event Binding</h1>
   <div class="btn-container">
-    <h1 (mousedown)="incrMouseDown()">Increment - {{counterMouseDown}}</h1>
+    <input style="padding: 5px;" type="text" (keyup)="onKeyUp()"/>
   </div>
 </div>
 
 <div class="container">
-  <h1>Mouse Up event Counter Example</h1>
+  <h1>Focus Event Binding</h1>
   <div class="btn-container">
-    <h1 (mouseup)="incrMouseUp()">Increment - {{counterMouseUp}}</h1>
+    <input style="padding: 5px;" type="text" (focus)="onFocus()"/>
   </div>
 </div>
 
 <div class="container">
-  <h1>Mouse Drag event Counter Example</h1>
+  <h1>Select Event Binding</h1>
   <div class="btn-container">
-    <h1 (drag)="incrMouseDrag()">Increment - {{counterMouseDrag}}</h1>
-  </div>
-</div>
-
-<div class="container">
-  <h1>Mouse DragOver Counter Example</h1>
-  <div class="btn-container">
-    <h1 (dragover)="incrMouseDragOver()">Increment - {{counterDragOver}}</h1>
+    <input style="padding: 5px;" type="text" (select)="onSelect()"/>
   </div>
 </div>
 </div>

@@ -10,40 +10,30 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.scss',
 })
 export class App {
-  counterDbl: number = 0;
-  counterMouseOver: number = 0;
-  counterMouseLeave: number = 0;
-  counterMouseDown: number = 0;
-  counterMouseUp: number = 0;
-  counterMouseDrag: number = 0;
-  counterDragOver: number = 0;
 
-  incrDbl() {
-     this.counterDbl++;
+
+  onKeyPress() {
+    console.log('KeyPress event is triggered')
   }
 
-  incrMouseOver() {
-     this.counterMouseOver++;
+  onKeyDown() {
+    console.log('Keydown event is triggered')
   }
 
-  incrMouseLeave() {
-    this.counterMouseLeave++;
-  }
-  
-  incrMouseDown() {
-    this.counterMouseDown++
+  onKeyDownEnter() {
+    console.log('Keydown Enter event is triggered')
   }
 
-  incrMouseUp() {
-    this.counterMouseUp++
+  onKeyUp() {
+    console.log('Keyup event is triggered')
   }
 
-  incrMouseDrag() {
-    this.counterMouseDrag++
+  onFocus() {
+    console.log('Focus event is triggered')
   }
 
-  incrMouseDragOver() {
-    this.counterDragOver++
+  onSelect() {
+    console.log('Select event is triggered')
   }
   
 }
