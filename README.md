@@ -12,7 +12,7 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Counter App
+## Mouse Event Binding
 
 ![image](https://github.com/user-attachments/assets/99c303f4-52f5-4446-948e-b21e6fe2ac16)
 
