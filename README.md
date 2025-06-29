@@ -57,6 +57,15 @@ Once the server is running, open your browser and navigate to `http://localhost:
 
 ![image](https://github.com/user-attachments/assets/365bbda0-154c-42f3-86ca-25581b97aaa7)
 
+## Propery Binding Image
+
+![image](https://github.com/user-attachments/assets/b8d67504-c659-4491-b6ad-e534c4ec3497)
+
+![image](https://github.com/user-attachments/assets/00b0fa70-d6f3-44e6-b817-28f2f6bcb8d0)
+
+
+
+
 
 
 
