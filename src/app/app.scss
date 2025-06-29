@@ -1,4 +1,8 @@
-.container {
+.wrapper {
+   display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* spacing between columns/rows */
+  .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,6 +13,8 @@
   width: 400px;
   padding: 20px;
   margin: 20px auto;
+  flex: 0 0 23%; /* Approx 4 items per row with spacing */
+  box-sizing: border-box;
 }
 h1 {
   text-align: center;
@@ -40,3 +46,5 @@ p {
   border-radius: 5px;
   border: 1px solid #3b8d78;
 }
+}
+

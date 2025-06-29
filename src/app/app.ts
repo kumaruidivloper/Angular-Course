@@ -10,8 +10,40 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.scss',
 })
 export class App {
-  count: number = 0;
-  counter(type: string) {
-    type === 'incr' ? this.count++ : this.count--;
+  counterDbl: number = 0;
+  counterMouseOver: number = 0;
+  counterMouseLeave: number = 0;
+  counterMouseDown: number = 0;
+  counterMouseUp: number = 0;
+  counterMouseDrag: number = 0;
+  counterDragOver: number = 0;
+
+  incrDbl() {
+     this.counterDbl++;
   }
+
+  incrMouseOver() {
+     this.counterMouseOver++;
+  }
+
+  incrMouseLeave() {
+    this.counterMouseLeave++;
+  }
+  
+  incrMouseDown() {
+    this.counterMouseDown++
+  }
+
+  incrMouseUp() {
+    this.counterMouseUp++
+  }
+
+  incrMouseDrag() {
+    this.counterMouseDrag++
+  }
+
+  incrMouseDragOver() {
+    this.counterDragOver++
+  }
+  
 }

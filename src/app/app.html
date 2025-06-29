@@ -1,8 +1,50 @@
-<div class="container">
-  <h1>Counter Example</h1>
+<div class="wrapper">
+  <div class="container">
+  <h1>DblClick mouse event Counter Example</h1>
   <div class="btn-container">
-    <button (click)="counter('decr')">--</button>
-    <p>{{ count }}</p>
-    <button (click)="counter('incr')">++</button>
+    <h1 (dblclick)="incrDbl()">Increment - {{counterDbl}}</h1>
   </div>
+</div>
+
+<div class="container">
+  <h1>Mouse Over event Counter Example</h1>
+  <div class="btn-container">
+    <h1 (mouseover)="incrMouseOver()">Increment - {{counterMouseOver}}</h1>
+  </div>
+</div>
+
+<div class="container">
+  <h1>Mouse Leave event Counter Example</h1>
+  <div class="btn-container">
+    <h1 (mouseleave)="incrMouseLeave()">Increment - {{counterMouseLeave}}</h1>
+  </div>
+</div>
+
+<div class="container">
+  <h1>Mouse Down event Counter Example</h1>
+  <div class="btn-container">
+    <h1 (mousedown)="incrMouseDown()">Increment - {{counterMouseDown}}</h1>
+  </div>
+</div>
+
+<div class="container">
+  <h1>Mouse Up event Counter Example</h1>
+  <div class="btn-container">
+    <h1 (mouseup)="incrMouseUp()">Increment - {{counterMouseUp}}</h1>
+  </div>
+</div>
+
+<div class="container">
+  <h1>Mouse Drag event Counter Example</h1>
+  <div class="btn-container">
+    <h1 (drag)="incrMouseDrag()">Increment - {{counterMouseDrag}}</h1>
+  </div>
+</div>
+
+<div class="container">
+  <h1>Mouse DragOver Counter Example</h1>
+  <div class="btn-container">
+    <h1 (dragover)="incrMouseDragOver()">Increment - {{counterDragOver}}</h1>
+  </div>
+</div>
 </div>

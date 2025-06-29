@@ -14,7 +14,9 @@ Once the server is running, open your browser and navigate to `http://localhost:
 
 ## Counter App
 
-![image](https://github.com/user-attachments/assets/2cce41bb-1750-4173-bb69-b0b117a6ef7c)
+![image](https://github.com/user-attachments/assets/99c303f4-52f5-4446-948e-b21e6fe2ac16)
+
+![image](https://github.com/user-attachments/assets/29dd9f94-e7ed-4f3e-a00e-872f201cbb9a)
 
 
 
