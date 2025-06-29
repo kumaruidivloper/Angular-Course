@@ -10,30 +10,11 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.scss',
 })
 export class App {
-
-
-  onKeyPress() {
-    console.log('KeyPress event is triggered')
-  }
-
-  onKeyDown() {
-    console.log('Keydown event is triggered')
-  }
-
-  onKeyDownEnter() {
-    console.log('Keydown Enter event is triggered')
-  }
-
-  onKeyUp() {
-    console.log('Keyup event is triggered')
-  }
-
-  onFocus() {
-    console.log('Focus event is triggered')
-  }
-
-  onSelect() {
-    console.log('Select event is triggered')
-  }
   
+  onClick(e: MouseEvent, msg: string, num: number ) {
+    console.log('Event', e);
+    console.log('Message', msg);
+    console.log('Number', num);
+  }
+
 }

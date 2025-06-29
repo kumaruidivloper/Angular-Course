@@ -1,43 +1,8 @@
 <div class="wrapper">
-  <div class="container">
-  <h1>KeyPress Event Binding</h1>
-  <div class="btn-container">
-    <input style="padding: 5px;" type="text" (keypress)="onKeyPress()"/>
-  </div>
-</div>
-
 <div class="container">
-  <h1>KeyDown Event Binding</h1>
+  <h1>Click event get event Object</h1>
   <div class="btn-container">
-    <input style="padding: 5px;" type="text" (keydown)="onKeyDown()"/>
-  </div>
-</div>
-
-<div class="container">
-  <h1>KeyEnter Event Binding</h1>
-  <div class="btn-container">
-    <input style="padding: 5px;" type="text" (keydown.enter)="onKeyDownEnter()"/>
-  </div>
-</div>
-
-<div class="container">
-  <h1>KeyUp Event Binding</h1>
-  <div class="btn-container">
-    <input style="padding: 5px;" type="text" (keyup)="onKeyUp()"/>
-  </div>
-</div>
-
-<div class="container">
-  <h1>Focus Event Binding</h1>
-  <div class="btn-container">
-    <input style="padding: 5px;" type="text" (focus)="onFocus()"/>
-  </div>
-</div>
-
-<div class="container">
-  <h1>Select Event Binding</h1>
-  <div class="btn-container">
-    <input style="padding: 5px;" type="text" (select)="onSelect()"/>
+    <input style="padding: 5px 25px" type="button" value="Button" (click)="onClick($event, 'Hello', 32)"/>
   </div>
 </div>
 </div>
