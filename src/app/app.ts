@@ -10,10 +10,4 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.scss',
 })
 export class App {
-  quantity: number = 1;
-  pricePerItem: number = 100;
-
-  get totalPrice(): number {
-    return this.quantity * this.pricePerItem;
-  }
 }
