@@ -17,4 +17,14 @@ export class App {
     console.log('Number', num);
   }
 
+  isShift() {
+    console.log('Shift + Y is pressd')
+  }
+
+  isShiftEvent(event: any) {
+    if(event.shiftKey && event.key === 'Y') {
+        console.log('Shift + Y is pressd', event)
+    }
+  }
+
 }

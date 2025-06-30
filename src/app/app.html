@@ -5,4 +5,18 @@
     <input style="padding: 5px 25px" type="button" value="Button" (click)="onClick($event, 'Hello', 32)"/>
   </div>
 </div>
+
+<div class="container">
+  <h1>Shift Key Status Checking  </h1>
+  <div class="btn-container">
+    <input style="padding: 5px" type="text" value="" (keydown.shift.y)="isShift()"/>
+  </div>
+</div>
+
+<div class="container">
+  <h1>Shift Key Status Checking use $event Obj  </h1>
+  <div class="btn-container">
+    <input style="padding: 5px" type="text" value="" (keydown)="isShiftEvent($event)"/>
+  </div>
+</div>
 </div>

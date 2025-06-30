@@ -67,7 +67,15 @@ Once the server is running, open your browser and navigate to `http://localhost:
 
 ![image](https://github.com/user-attachments/assets/4a03ef1d-d4fd-454d-a7f0-ff3fbd67fb3e)
 
+## $event Checking Shift Key Status
 
+![image](https://github.com/user-attachments/assets/04f02dcf-546e-4576-869e-e577a4d73a84)
+
+## $event Bound (Key modifiers) Keydown event(Type 1)
+
+![image](https://github.com/user-attachments/assets/9681630a-797d-4e81-b0d1-7bfe4b31b28e)
+
+![image](https://github.com/user-attachments/assets/258437b7-b8b7-4688-9cbb-72a28335f1bf)
 
 
 
