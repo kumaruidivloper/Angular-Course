@@ -10,6 +10,10 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.scss',
 })
 export class App {
-  staticInput: string = 'Static two-way binding';
-  dynamicInput: string = '';
+  inputValue: string = '';
+  dynamicValue: string = '';
+
+  show() {
+    this.dynamicValue = this.inputValue;
+  }
 }
