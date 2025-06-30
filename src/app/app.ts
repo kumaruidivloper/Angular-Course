@@ -1,17 +1,18 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [CommonModule],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
 export class App {
-  display: boolean = true;
-  num: number = 0;
+  displayElement: boolean = false;
+
+  // show(): void {
+  //   this.displayElement = !this.displayElement;
+  // }
 }

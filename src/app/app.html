@@ -1,9 +1,14 @@
-<div *ngIf="display">
-  Structural Directive Example
+<div class="container">
+  <button (click)="displayElement = !displayElement" class="toggle-btn">
+    Show
+  </button>
+
+  <div *ngIf="displayElement" class="content-box">
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+      praesentium aperiam sed sit numquam expedita consequatur reprehenderit
+      ullam unde mollitia libero, cum odit aliquid impedit iusto id amet
+      deserunt repellat!
+    </p>
+  </div>
 </div>
-
-<h1 *ngIf="num > 0">{{num}} is greater than 0</h1>
-<h1 *ngIf="num < 0">{{num}} is less than 0</h1>
-<h1 *ngIf="num === 0">Number is 0</h1>
-
-
