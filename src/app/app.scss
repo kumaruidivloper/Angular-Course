@@ -1,50 +1,52 @@
-.wrapper {
-   display: flex;
-    flex-wrap: wrap;
-    gap: 16px; /* spacing between columns/rows */
-  .container {
+.counter-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  border: 3px solid #3b8d78;
-  border-radius: 5px;
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
   padding: 20px;
-  margin: 20px auto;
-  flex: 0 0 23%; /* Approx 4 items per row with spacing */
-  box-sizing: border-box;
+  margin: 10% auto;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
 }
-h1 {
-  text-align: center;
-  font-size: 35px;
+
+.counter-container:focus {
+  outline: none;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-.btn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-button {
-  padding: 10px 20px;
-  margin: 10px;
-  background-color: rgb(28, 183, 144);
-  color: black;
-  border: none;
-  font-size: 18px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-p {
-  margin: 10px;
-  font-size: 18px;
+
+.counter {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
   font-weight: bold;
-  padding: 10px 20px;
-  width: 25px;
+  letter-spacing: 0.1rem;
+}
+
+.instruction {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 15px;
   text-align: center;
-  border-radius: 5px;
-  border: 1px solid #3b8d78;
 }
+
+@media (max-width: 768px) {
+  .counter-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .counter {
+    font-size: 2rem;
+  }
+
+  .instruction {
+    font-size: 0.875rem;
+  }
 }
+
 

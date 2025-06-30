@@ -11,19 +11,14 @@ import { FormsModule } from '@angular/forms';
 })
 export class App {
   
-  onClick(e: MouseEvent, msg: string, num: number ) {
-    console.log('Event', e);
-    console.log('Message', msg);
-    console.log('Number', num);
-  }
+  counter: number = 0;
 
-  isShift() {
-    console.log('Shift + Y is pressd')
-  }
-
-  isShiftEvent(event: any) {
-    if(event.shiftKey && event.key === 'Y') {
-        console.log('Shift + Y is pressd', event)
+  onKeyDown(event: KeyboardEvent) {
+    console.log(event)
+    if(event.key === 'ArrowUp') {
+       this.counter++
+    } else if(event.key === 'ArrowDown') {
+      this.counter--
     }
   }
 
