@@ -1,5 +1,25 @@
-<input type="text" style="padding: 5px;" [(ngModel)]="inputValue"/>
-<br><br>
-<input type="submit" value="Show" style="padding: 5px 25px;" (click)="show()"/>
-<h1>{{dynamicValue}}</h1>
+<div class="cart-container">
+  <div class="form-group">
+    <label>Quantity:</label>
+    <input
+      type="number"
+      class="quantity-input"
+      [(ngModel)]="quantity"
+      min="0"
+    />
+  </div>
+  <div class="price-info">
+    <p style="color: black;"> 
+      Price per item: <span class="price">{{ pricePerItem }}</span>
+    </p>
+    <label>Total Price:</label>
+    <input
+      type="text"
+      class="total-price-input"
+      readonly
+      [(ngModel)]="totalPrice"
+    />
+  </div>
+</div>
+
 

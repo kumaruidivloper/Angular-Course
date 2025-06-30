@@ -10,10 +10,10 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.scss',
 })
 export class App {
-  inputValue: string = '';
-  dynamicValue: string = '';
+  quantity: number = 1;
+  pricePerItem: number = 100;
 
-  show() {
-    this.dynamicValue = this.inputValue;
+  get totalPrice(): number {
+    return this.quantity * this.pricePerItem;
   }
 }
