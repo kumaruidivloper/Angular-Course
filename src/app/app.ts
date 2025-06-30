@@ -10,16 +10,6 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.scss',
 })
 export class App {
-  
-  counter: number = 0;
-
-  onKeyDown(event: KeyboardEvent) {
-    console.log(event)
-    if(event.key === 'ArrowUp') {
-       this.counter++
-    } else if(event.key === 'ArrowDown') {
-      this.counter--
-    }
-  }
-
+  staticInput: string = 'Static two-way binding';
+  dynamicInput: string = '';
 }
