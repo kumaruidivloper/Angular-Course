@@ -1,28 +1,29 @@
-<div>
-    <button (click)="toggleEmployees()">Display Employees</button>
-    @if(!showEmployees) {
-      <div>
-        <h1>List of Employees</h1>
-        <table>
-            <thead>
-              <th>ID</th>
-              <th>Name</th>
-              <th>Role</th>
-            </thead>
-            <tbody>
-              @for(emp of employees(); track emp.id;) {
-                @if(emp.role === 'Marketing') {
-                  <tr>
-                  <td>{{emp.id}}</td>
-                  <td>{{emp.name}}</td>
-                  <td>{{emp.role}}</td>
-                </tr>
-                }
-              }
-            </tbody>
-        </table>
-      </div>
-      } @else  {
-          <h2>No employees found !</h2>
-      }
+<h1 style="text-align: center;">Example of *ngFor</h1>
+<div *ngFor="let value of fullStackDev">
+  <ul>
+    <li>{{ value.id }}</li>
+    <li>{{ value.name }}</li>
+  </ul>
+</div>
+
+<h1 style="text-align: center;">Example of Index Item</h1>
+<div *ngFor="let item of items; index as i">
+  <ul>
+    <li>{{ i + 1 }}. {{ item }}</li>
+  </ul>
+</div>
+
+<h1 style="text-align: center;">Example of trackBy</h1>
+<div *ngFor="let itemm of fullStackDev; trackBy: trackByItemID">
+  <ul>
+    <li>{{ itemm.id }}. {{itemm.name}}</li>
+  </ul>
+</div>
+<button (click)="updateItem()">Update Item</button>
+
+<h1 style="text-align: center;">Example *nfFor of Nested Array</h1>
+<div *ngFor="let row of matrix">
+  <div *ngFor="let cell of row">
+      {{cell}}
+  </div>
 </div>
