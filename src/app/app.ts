@@ -11,10 +11,13 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.scss',
 })
 export class App {
-  updateStyles: any = 'updateStyles';
-  hasText: boolean = false;
+  colorMode: string = 'lightMode';
 
-  textInput(e: any) {
-    this.hasText = e.target.value !== '';
+  toggleMode() {
+    if (this.colorMode === 'lightMode') {
+      this.colorMode = 'darkMode';
+    } else {
+      this.colorMode = 'lightMode';
+    }
   }
 }
