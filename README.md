@@ -12,38 +12,51 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Control Flow Statments @For Loop
+## ngSwitch Structural Directives Intro
 
-![image](https://github.com/user-attachments/assets/88ca71ab-ae12-4f49-a895-774828c974d9)
+![image](https://github.com/user-attachments/assets/df267629-c403-4f81-b17c-141b98ae8ec1)
 
-![image](https://github.com/user-attachments/assets/fdb87ee7-883b-4b2a-ab07-9b718800284a)
+![image](https://github.com/user-attachments/assets/124e4b56-0adf-4ae3-897a-197be8e3cf56)
 
-![image](https://github.com/user-attachments/assets/dc29e9ec-a48a-474e-8836-cab93e2827f3)
+![image](https://github.com/user-attachments/assets/23b112ef-8e4b-4405-a448-3a38a0a3729e)
 
-![image](https://github.com/user-attachments/assets/9c8b2a0d-2aa3-4fe5-b4a1-89704f9f5fc4)
+![image](https://github.com/user-attachments/assets/2fa1a5d8-5901-4552-9f8b-487be8598214)
 
-![image](https://github.com/user-attachments/assets/397e2d65-163e-47eb-899b-037541d6680d)
+![image](https://github.com/user-attachments/assets/30337038-329a-46dd-b0a7-ae4a3bd1bd90)
 
-![image](https://github.com/user-attachments/assets/1cfe6823-c756-4809-b205-756ac777a11c)
+![image](https://github.com/user-attachments/assets/20d5420f-b05d-4d89-9962-f248c01f5c28)
 
-![image](https://github.com/user-attachments/assets/7dfb460e-ac62-4672-beca-f8ebee14f16a)
+![image](https://github.com/user-attachments/assets/9722c8d9-7120-4d21-b2ae-ce643c30963e)
 
-![image](https://github.com/user-attachments/assets/5dbf19d2-7339-4577-9105-2df01fe8f3cf)
+![image](https://github.com/user-attachments/assets/134f0fbd-592e-4450-8e8e-e090656ee448)
 
-![image](https://github.com/user-attachments/assets/d2aa1778-f499-4e80-93e6-d77a44c8836e)
-
-![image](https://github.com/user-attachments/assets/1eb79cf7-8a00-4263-a864-de2d1e6e22f8)
-
-![image](https://github.com/user-attachments/assets/f10462c0-c6d8-45b0-b922-ff2826234da7)
-
-![image](https://github.com/user-attachments/assets/887320da-7f58-4cbb-83e5-84e6b928c7a9)
-
-## Newer version (ng generate @angular/core:control-flow)
-
-![image](https://github.com/user-attachments/assets/af86ba22-ce24-44e2-872b-083e9546be74)
+![image](https://github.com/user-attachments/assets/5f439e8b-e998-4038-85d8-f2aeef9601c4)
 
 
+## ngSwitch Structural Directives Q&A
 
+![image](https://github.com/user-attachments/assets/213204ca-4b9f-472b-a764-1c03111f5b65)
 
+![image](https://github.com/user-attachments/assets/7734f625-7e80-4c21-9fd3-076b789246cb)
+
+![image](https://github.com/user-attachments/assets/bba11cd5-b87c-4524-805f-b25bb24117f8)
+
+![image](https://github.com/user-attachments/assets/f6b8f298-f40c-45a9-85da-76f687ca3e5d)
+
+![image](https://github.com/user-attachments/assets/4b7a5917-60a7-4da8-bda6-3567ad1eda6b)
+
+![image](https://github.com/user-attachments/assets/2b658fef-dfbb-4cac-b47a-0e6635a9ad42)
+
+![image](https://github.com/user-attachments/assets/eee0fdfb-6c50-4dd4-bf6f-49155bfff102)
+
+![image](https://github.com/user-attachments/assets/63fe4933-2e75-4618-87ec-836c9f0169c3)
+
+![image](https://github.com/user-attachments/assets/f56ef2ec-ffdc-4bbb-8d15-e07b0500bd83)
+
+![image](https://github.com/user-attachments/assets/59851617-46a3-465f-a6f6-685bf17da532)
+
+![image](https://github.com/user-attachments/assets/0e7906ae-47df-4e54-a459-54d56a9af2cc)
+
+![image](https://github.com/user-attachments/assets/ed3cecaa-31b4-4b7a-8f2b-0e90dcc37b99)
 
 
