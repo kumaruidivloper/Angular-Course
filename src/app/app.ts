@@ -11,23 +11,18 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.scss',
 })
 export class App {
-  nm: string = '';
-  em: string = '';
-  emailIsValid: boolean = false;
-  formSubmitted: boolean = false;
-
-  checkEmailValidation(em: string): void {
-    if (em.includes('@') && em.includes('.com') || em.includes('.net')) {
-      this.emailIsValid = true;
-    } else {
-      this.emailIsValid = false;
-    }
-  }
-  showMessage() {
-    if (this.nm && this.emailIsValid) {
-      this.formSubmitted = true;
-    } else {
-      this.formSubmitted = false;
-    }
-  }
+  subjectList = [
+    {
+      subCode: 101,
+      name: 'JavaScript',
+    },
+    {
+      subCode: 102,
+      name: 'C++',
+    },
+    {
+      subCode: 103,
+      name: 'NestJS',
+    },
+  ];
 }

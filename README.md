@@ -12,13 +12,17 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## ngStyle Changing Color InputField Demo
+## Grouping Elements with ng-container intro
 
-![image](https://github.com/user-attachments/assets/7c399d8c-7ec9-42a5-bdda-c86fbf26e51a)
+![image](https://github.com/user-attachments/assets/77d35b59-648a-4c00-b612-719dbb16318d)
 
-![image](https://github.com/user-attachments/assets/e3b0268b-4dc3-4cb7-977d-ff32d6ed2419)
+![image](https://github.com/user-attachments/assets/26783ea6-1aa2-4f1e-851e-1573c9c0f6bd)
 
-![image](https://github.com/user-attachments/assets/541f99c4-593d-465e-80ef-10e55eb5dd8b)
+![image](https://github.com/user-attachments/assets/98bac6f9-3aea-4fa6-a674-a309cd067cc4)
+
+![image](https://github.com/user-attachments/assets/2d8ecbd0-dbd2-4a54-ac4b-de8ca9b1ad9b)
+
+![image](https://github.com/user-attachments/assets/ac6cb8d9-3f2a-4d21-9626-4c2e75de2099)
 
 
 

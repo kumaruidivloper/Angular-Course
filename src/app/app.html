@@ -1,32 +1,39 @@
-<form *ngIf="!formSubmitted">
-  <h1>Submit Form</h1>
-  <div class="form-group">
-    <label for="name">Name</label>
-    <input
-      type="text"
-      name="name"
-      [(ngModel)]="nm"
-      [ngStyle]="{ 'background-color': nm ? 'lightgreen' : '#ffb6c1' }"
-      required
-    />
+<h1>Noraml Division</h1>
+<div>
+  <p>Item 1</p>
+  <p>Item 2</p>
+  <p>Item 3</p>
+  <p>Item 4</p>
+</div>
+
+<hr/>
+<!-- We avoid un wanted node gendration (Like React Fragment) -->
+<h1>nh-container</h1>
+<ng-container>
+  <p>Item 1</p>
+  <p>Item 2</p>
+  <p>Item 3</p>
+  <p>Item 4</p>
+</ng-container>
+
+<!-- Creating unwanted node (Like React Fragment) -->
+<h1>With Div Container</h1>
+<div *ngFor="let subject of subjectList">
+  <div *ngIf="subject.subCode">
+    <span style="margin-right: 5px; font-size: 20px"
+      >Subject Code: {{ subject.subCode }},
+    </span>
+    <span style="font-size: 20px">Subject Name: {{ subject.name }}</span>
   </div>
+</div>
 
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input
-      type="email"
-      name="email"
-      [(ngModel)]="em"
-      [ngStyle]="{
-        'background-color': emailIsValid ? 'lightgreen' : '#ffb6c1'
-      }"
-      (input)="checkEmailValidation(em)"
-      autocomplete="off"
-      required
-    />
+<!-- We avoid un wanted node gendration (Like React Fragment) -->
+<h1>With ng-container Container</h1>
+<ng-container *ngFor="let subject of subjectList">
+  <div *ngIf="subject.subCode">
+    <span style="margin-right: 5px; font-size: 20px"
+      >Subject Code: {{ subject.subCode }},
+    </span>
+    <span style="font-size: 20px">Subject Name: {{ subject.name }}</span>
   </div>
-
-  <button type="submit" (click)="showMessage()">Submit</button>
-</form>
-
-<p *ngIf="formSubmitted">Form submitted successfully</p>
+</ng-container>
