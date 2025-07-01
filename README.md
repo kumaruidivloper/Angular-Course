@@ -12,21 +12,21 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## HTML Template with ng-template 
+## ng-templates Vs ng-container
 
-![image](https://github.com/user-attachments/assets/d97b3279-e7a5-4563-a8dc-c43b9e56c248)
+![image](https://github.com/user-attachments/assets/69eaaa5d-6109-493b-a8d7-a58890f0278b)
 
-![image](https://github.com/user-attachments/assets/896cd985-0b63-4052-974d-738312122952)
+![image](https://github.com/user-attachments/assets/9eedc8de-51d1-4cab-9fe1-25eaf973f2f3)
 
-![image](https://github.com/user-attachments/assets/1588d942-888d-46f7-a320-dd4bb8a43f0e)
+![image](https://github.com/user-attachments/assets/e83f05ff-ac76-4c5a-8009-215bc644cb9c)
 
-![image](https://github.com/user-attachments/assets/56beb440-d409-4f3e-9d13-4c6c8d0a650d)
+![image](https://github.com/user-attachments/assets/1c948651-7e82-4125-bb04-8de10ab3c04c)
 
-![image](https://github.com/user-attachments/assets/c4076d95-b009-4ba5-a1b0-7704dfe90a2a)
+![image](https://github.com/user-attachments/assets/adb9769b-c860-49ba-b041-271449de7026)
 
-![image](https://github.com/user-attachments/assets/e29e5276-57cf-453c-8b82-641afdfb8246)
+![image](https://github.com/user-attachments/assets/6780d57e-2f2c-4210-940b-a8a407864371)
 
-![image](https://github.com/user-attachments/assets/723eaf1f-f65d-43d8-b568-ef19f3c3579d)
+![image](https://github.com/user-attachments/assets/d46f5a3b-702e-4668-9c6f-3e6e616a9b5d)
 
 
 
