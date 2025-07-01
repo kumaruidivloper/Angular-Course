@@ -11,11 +11,5 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.scss',
 })
 export class App {
-  isAuthorized: boolean = true;
-
-  listItems: string[] = ['ItemA', 'ItemB', 'ItemC', 'ItemD'];
-
-  listItemsEmpty: string[] = [];
-
-  
+  user: string = '';
 }

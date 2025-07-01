@@ -1,28 +1,10 @@
-<ng-container *ngIf="isAuthorized; else notAuthorized">
-  <h1>Authorized User</h1>
-</ng-container>
-<ng-template #notAuthorized>
-  <h1>Not Authorized</h1>
-</ng-template>
-
-
-<ng-container *ngIf="listItems.length > 0; else noItems">
-  <ul>
-    <li *ngFor="let item of listItems">{{ item }}</li>
-  </ul>
-</ng-container>
-
-<ng-template #noItems>
-  <p>No item to display!</p>
-</ng-template>
-
-<hr/>
-<ng-container *ngIf="listItemsEmpty.length > 0; else noItems">
-  <ul>
-    <li *ngFor="let item of listItems">{{ item }}</li>
-  </ul>
-</ng-container>
-
-<ng-template #noItems>
-  <p>No item to display!</p>
-</ng-template>
+<div class="box">
+  <div class="input-container">
+    <input type="text" [(ngModel)]="user" />
+    <label for="">Full Name</label>
+  </div>
+  <ng-container *ngIf="user !== ''; else notValid"></ng-container>
+  <ng-template #notValid>
+    <h3>Please enter your name</h3>
+  </ng-template>
+</div>
