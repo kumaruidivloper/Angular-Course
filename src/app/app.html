@@ -1,14 +1,28 @@
-<div class="container">
-  <button (click)="displayElement = !displayElement" class="toggle-btn">
-    Show
-  </button>
-
-  <div *ngIf="displayElement" class="content-box">
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-      praesentium aperiam sed sit numquam expedita consequatur reprehenderit
-      ullam unde mollitia libero, cum odit aliquid impedit iusto id amet
-      deserunt repellat!
-    </p>
-  </div>
+<div>
+    <button (click)="toggleEmployees()">Display Employees</button>
+    @if(!showEmployees) {
+      <div>
+        <h1>List of Employees</h1>
+        <table>
+            <thead>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Role</th>
+            </thead>
+            <tbody>
+              @for(emp of employees(); track emp.id;) {
+                @if(emp.role === 'Marketing') {
+                  <tr>
+                  <td>{{emp.id}}</td>
+                  <td>{{emp.name}}</td>
+                  <td>{{emp.role}}</td>
+                </tr>
+                }
+              }
+            </tbody>
+        </table>
+      </div>
+      } @else  {
+          <h2>No employees found !</h2>
+      }
 </div>
