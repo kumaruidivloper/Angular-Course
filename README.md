@@ -12,17 +12,22 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Grouping Elements with ng-container intro
+## HTML Template with ng-template 
 
-![image](https://github.com/user-attachments/assets/77d35b59-648a-4c00-b612-719dbb16318d)
+![image](https://github.com/user-attachments/assets/d97b3279-e7a5-4563-a8dc-c43b9e56c248)
 
-![image](https://github.com/user-attachments/assets/26783ea6-1aa2-4f1e-851e-1573c9c0f6bd)
+![image](https://github.com/user-attachments/assets/896cd985-0b63-4052-974d-738312122952)
 
-![image](https://github.com/user-attachments/assets/98bac6f9-3aea-4fa6-a674-a309cd067cc4)
+![image](https://github.com/user-attachments/assets/1588d942-888d-46f7-a320-dd4bb8a43f0e)
 
-![image](https://github.com/user-attachments/assets/2d8ecbd0-dbd2-4a54-ac4b-de8ca9b1ad9b)
+![image](https://github.com/user-attachments/assets/56beb440-d409-4f3e-9d13-4c6c8d0a650d)
 
-![image](https://github.com/user-attachments/assets/ac6cb8d9-3f2a-4d21-9626-4c2e75de2099)
+![image](https://github.com/user-attachments/assets/c4076d95-b009-4ba5-a1b0-7704dfe90a2a)
+
+![image](https://github.com/user-attachments/assets/e29e5276-57cf-453c-8b82-641afdfb8246)
+
+![image](https://github.com/user-attachments/assets/723eaf1f-f65d-43d8-b568-ef19f3c3579d)
+
 
 
 
