@@ -1,8 +1,11 @@
-<div class="container">
-  <label for="age">Enter your age: </label>
-  <input type="number" id="age" (input)="checkEligibility()" [(ngModel)]="age" />
-  <div class="message" [ngSwitch]="isEligible">
-    <p *ngSwitchCase="true" class="eligible">You are eligible to vote</p>
-    <p *ngSwitchDefault class="not-eligible">You are not eligible to vote!</p>
-  </div>
-</div>
+<p [ngClass]="updateStyles" style="margin-bottom: 10px;">This is an example of ng Class directive</p>
+<p [ngClass]="'updateStyles italicText'" style="margin-bottom: 10px;">This is an example of ng Class directive</p>
+<p [ngClass]="'updateStyles italicText letterFormat'" style="margin-bottom: 10px;">This is an example of ng Class directive</p>
+<p [ngClass]="['updateStyles italicText letterFormat']" style="margin-bottom: 10px;">This is an example of ng Class directive</p>
+
+<input
+  type="text"
+  placeholder="Enter text here..."
+  (input)="textInput($event)"
+  [ngClass]="{ txt: hasText }"
+/>
