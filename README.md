@@ -22,4 +22,6 @@ Once the server is running, open your browser and navigate to `http://localhost:
 
 ![image](https://github.com/user-attachments/assets/b398444b-d47f-4822-80eb-0637c8db8799)
 
+![image](https://github.com/user-attachments/assets/4475bd51-1327-41ce-b851-d138e43d0d49)
+
 
