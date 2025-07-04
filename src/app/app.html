@@ -1,61 +1,167 @@
-<!-- <ng-template #show>
-  <p>This is the ng-template </p>
+<!-- <h1>Portfolio</h1>
+<ng-container>
+  <h2>Personal Information</h2>
+  <form>
+    <div>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" />
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+    </div>
+    <div>
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" id="phone" />
+    </div>
+    <div>
+      <label for="address">Address</label>
+      <input type="text" name="address" id="address" />
+    </div>
+  </form>
+  <h2>Qualifications</h2>
+  <div>
+    <form>
+      <div>
+        <label for="school">School/College</label>
+        <input type="text" name="school" id="school" />
+      </div>
+      <div>
+        <label for="degree">Degree</label>
+        <input type="text" name="degree" id="degree" />
+      </div>
+      <div>
+        <label for="year">Year</label>
+        <input type="text" name="year" id="year" />
+      </div>
+    </form>
+  </div>
+  <div class="btn-container">
+    <button>Add Qualification</button>
+    <button type="submit">Submit</button>
+  </div>
+</ng-container>
+
+<ng-template>
+  <div class="preview-container">
+    <h2>Preview</h2>
+    <div>
+      <p></p>
+      <p>Phone :</p>
+      <p>Email :</p>
+      <p>Address :</p>
+    </div>
+    <div>
+      <h3>Qualifications</h3>
+      <div>
+        <h5>School/College</h5>
+        <h5>Degree :</h5>
+      </div>
+    </div>
+    <button>Edit</button>
+  </div>
+</ng-template> -->
+
+
+
+<h1 *ngIf="showHeading">Portfolio</h1>
+<ng-container *ngIf="!submitted; else preview">
+  <h2>Personal Information</h2>
+  <form>
+    <div>
+      <label for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        [(ngModel)]="nm"
+        autocomplete="off"
+      />
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        [(ngModel)]="em"
+        autocomplete="off"
+      />
+    </div>
+    <div>
+      <label for="phone">Phone</label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        [(ngModel)]="ph"
+        autocomplete="off"
+      />
+    </div>
+    <div>
+      <label for="address">Address</label>
+      <input type="text" name="address" id="address" [(ngModel)]="add" />
+    </div>
+  </form>
+  <h2>Qualifications</h2>
+  <div *ngFor="let q of qualification; let i = index">
+    <h3>Qualification {{ i + 1 }}</h3>
+    <form>
+      <div>
+        <label for="school">School/College</label>
+        <input
+          type="text"
+          name="school"
+          id="school"
+          [(ngModel)]="q.school"
+          autocomplete="off"
+        />
+      </div>
+      <div>
+        <label for="degree">Degree</label>
+        <input
+          type="text"
+          name="degree"
+          id="degree"
+          [(ngModel)]="q.degree"
+          autocomplete="off"
+        />
+      </div>
+      <div>
+        <label for="year">Year</label>
+        <input
+          type="text"
+          name="year"
+          id="year"
+          [(ngModel)]="q.year"
+          autocomplete="off"
+        />
+      </div>
+    </form>
+  </div>
+  <div class="btn-container">
+    <button (click)="addQualification()">Add Qualification</button>
+    <button type="submit" (click)="formSubmit()">Submit</button>
+  </div>
+</ng-container>
+
+<ng-template #preview>
+  <div class="preview-container">
+    <h2>Preview</h2>
+    <div>
+      <p [ngClass]="{ name: true }">{{ nm }}</p>
+      <p>Email : {{ em }}</p>
+      <p>Phone : {{ ph }}</p>
+      <p>Address : {{ add }}</p>
+    </div>
+    <div>
+      <h3>Qualifications</h3>
+      <div *ngFor="let q of qualification">
+        <h5>School/College : {{ q.school }}</h5>
+        <h5>Degree : {{ q.degree }} ({{ q.year }})</h5>
+      </div>
+    </div>
+    <button class="btn-edit" (click)="formEdit()">Edit</button>
+  </div>
 </ng-template>
-<ng-container *ngTemplateOutlet="show"></ng-container> -->
 
-<!-- <ng-template #show let-msg="showMessage">
-  <p style="font-size: 20px;">{{msg}} </p>
-</ng-template>
-
-<ng-container *ngTemplateOutlet="show; context:{showMessage: 'This is the context message'}"></ng-container> -->
-
-<!-- <ng-template #show let-msg="showMessage">
-  <p style="font-size: 20px">
-    Output: {{ msg }}
-  </p>
-</ng-template>
-<ng-container
-  *ngTemplateOutlet="show; context: { showMessage: calc() }"
-></ng-container> -->
-
-<!-- <ng-template #show let-person="showMessage">
-  <p style="font-size: 20px">
-    My name is {{ person.name }}, I am {{ person.age }} years old & I am from
-    {{ person.location }}
-  </p>
-</ng-template>
-<ng-container
-  *ngTemplateOutlet="show; context: { showMessage: showDetails }"
-></ng-container> -->
-
-
-<!-- <ng-template #show let-person>
-  <p style="font-size: 20px">
-    My name is {{ person.name }}, I am {{ person.age }} years old & I am from
-    {{ person.location }}
-  </p>
-</ng-template>
-<ng-container
-  *ngTemplateOutlet="show; context: { $implicit: showDetails }"
-></ng-container> -->
-
-<ng-template #employeeTable let-emp>
-  <table border="1" style="text-align: center; font-size: 20px; margin: 0 auto; background: #fff;">
-    <thead>
-      <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Salary</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let e of emp">
-        <td>{{e.id}}</td>
-        <td>{{e.name}}</td>
-        <td>{{e.salary}}</td>
-      </tr>
-    </tbody>
-  </table>
-</ng-template>
-
-<ng-container *ngTemplateOutlet="employeeTable; context:{$implicit: employees}"></ng-container>

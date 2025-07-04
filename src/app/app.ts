@@ -11,23 +11,25 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.scss',
 })
 export class App {
-  showDetails = {
-    name: 'UserA',
-    age: 29,
-    location: 'New York',
-  };
+  nm = '';
+  em = '';
+  ph = '';
+  add = '';
+  submitted: boolean = false;
+  showHeading: boolean = true;
+  qualification = [{ school: '', degree: '', year: '' }];
 
-  a: number = 10;
-  b: number = 20;
-
-  calc(): number {
-    return this.a + this.b;
+  addQualification() {
+    this.qualification.push({ school: '', degree: '', year: '' });
   }
 
+  formSubmit() {
+    this.submitted = true;
+    this.showHeading = false;
+  }
 
-  employees = [
-    {id: 1, name: 'UserA', salary: 45000},
-    {id: 2, name: 'UserB', salary: 50000},
-    {id: 3, name: 'UserC', salary: 65000},
-  ]
+  formEdit() {
+    this.submitted = false;
+    this.showHeading = true;
+  }
 }
